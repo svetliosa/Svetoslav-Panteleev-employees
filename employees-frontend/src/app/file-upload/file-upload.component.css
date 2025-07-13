@@ -1,0 +1,13 @@
+@media (max-width: 768px) {
+  .upload-section h3 {
+    font-size: 1.3em;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .upload-section h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+} 

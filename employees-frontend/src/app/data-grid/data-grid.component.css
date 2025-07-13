@@ -1,0 +1,26 @@
+.data-grid-container {
+  margin-top: 30px;
+}
+
+.data-grid-container h3 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .data-grid-container {
+    margin-top: 20px;
+  }
+  
+  .data-grid-container h3 {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .data-grid-container h3 {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+  }
+} 

@@ -1,0 +1,24 @@
+<div class="container">
+  <h1>{{ title }}</h1>
+  
+  <app-file-upload 
+    (fileSelected)="onFileSelected($event)"
+    (uploadRequested)="onUploadRequested($event)">
+  </app-file-upload>
+
+  <div *ngIf="isLoading" class="loading">
+    Loading...
+  </div>
+
+  <div *ngIf="errorMessage" class="error">
+    {{ errorMessage }}
+  </div>
+
+  <div *ngIf="resultMessage" class="result">
+    {{ resultMessage }}
+  </div>
+
+  <app-data-grid 
+    [collaborations]="collaborations">
+  </app-data-grid>
+</div> 
